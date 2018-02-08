@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './resources/index.css';
-import App from './main/App';
+import App from './main/components/App';
 import registerServiceWorker from './registerServiceWorker';
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import {Provider} from 'react-redux'
+import {applyMiddleware, createStore} from 'redux'
+import reducer from './main/reducers/index'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
-Enzyme.configure({adapter: new Adapter()})
+let store = createStore(reducer, applyMiddleware(logger, thunk))
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

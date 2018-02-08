@@ -1,12 +1,22 @@
 import React, {Component} from 'react'
+import "../resources/Greeter.css"
 
 class Greeter extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            time: new Date()
+            time: new Date(),
+            name: props.name
         }
+
+        this.changeHandler = this.changeHandler.bind(this);
+    }
+
+    changeHandler(e) {
+        this.setState({
+            name: e.target.value
+        })
     }
 
     componentDidMount() {
@@ -24,8 +34,9 @@ class Greeter extends Component {
     render() {
         return (
             <div>
-                <span style={{display: "block"}}>Hello, {this.props.name}</span>
+                <span>Hello, {this.state.name}</span>
                 <span>It is {this.state.time.toLocaleString()}</span>
+                <span>My name is <input value={this.state.name} onChange={this.changeHandler.bind(this)} type="text" /></span>
             </div>
         )
     }

@@ -13,7 +13,10 @@
     "@types/react-redux": "latest",
     "@types/jest": "latest",
     "@types/react-test-renderer": "latest",
-    "react-test-renderer": "latest"
+    "react-test-renderer": "latest",
+    "enzyme": "latest",
+    "enzyme-adapter-react-16": "latest",
+    "@types/enzyme": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

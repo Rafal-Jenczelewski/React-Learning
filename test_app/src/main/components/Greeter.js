@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import "../../resources/Greeter.css"
 import {connect} from "react-redux";
-import {changeName} from '../actions/index'
 
 class Greeter extends Component {
     constructor(props) {
@@ -11,11 +10,6 @@ class Greeter extends Component {
             time: new Date(),
         }
 
-        this.changeHandler = this.changeHandler.bind(this);
-    }
-
-    changeHandler(e) {
-        this.props.changeName(e.target.value)
     }
 
     componentDidMount() {
@@ -35,7 +29,6 @@ class Greeter extends Component {
             <div>
                 <span>Hello, {this.props.name}</span>
                 <span>It is {this.state.time.toLocaleString()}</span>
-                <span>My name is <input value={this.state.name} onChange={this.changeHandler.bind(this)} type="text" /></span>
             </div>
         )
     }
@@ -47,8 +40,4 @@ function mapStateToProps(state) {
     }
 }
 
-const mapDispatchToProps = {
-    changeName
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Greeter)
+export default connect(mapStateToProps, null)(Greeter)

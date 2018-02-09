@@ -5,8 +5,6 @@ import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import {Provider} from 'react-redux';
-import {changeName} from '../main/actions/index';
 
 Enzyme.configure({adapter: new Adapter()});
 

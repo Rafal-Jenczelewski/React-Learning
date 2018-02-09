@@ -20,7 +20,9 @@
     "react-test-renderer": "latest",
     "enzyme": "latest",
     "enzyme-adapter-react-16": "latest",
-    "@types/enzyme": "latest"
+    "@types/enzyme": "latest",
+    "redux-mock-store": "latest",
+    "@types/redux-mock-store": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

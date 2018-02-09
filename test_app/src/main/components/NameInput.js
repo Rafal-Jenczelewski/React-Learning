@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from "react-redux";
 import {changeName} from '../actions/index'
 
-class NameInput extends Component {
+export class NameInput extends Component {
     constructor(props) {
         super(props);
 

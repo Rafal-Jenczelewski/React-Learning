@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import "../../resources/Greeter.css"
 import {connect} from "react-redux";
-import "../resources/Greeter.css"
-import {TextInput} from '@nokia-csf-uxr/csfWidgets'
+import "../../resources/Greeter.css"
+
 import '@nokia-csf-uxr/csfWidgets/csfWidgets.css'
 
 class Greeter extends Component {
@@ -38,7 +38,6 @@ class Greeter extends Component {
             <div>
                 <span>Hello, {this.props.name}</span>
                 <span>It is {this.state.time.toLocaleString()}</span>
-                <TextInput label={"My name is"} text={this.state.name} onChange={this.changeHandler}/>
             </div>
         )
     }

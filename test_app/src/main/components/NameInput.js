@@ -1,6 +1,7 @@
-import React, {Component} from 'react'
-import {connect} from "react-redux";
-import {changeName} from '../actions/index'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {changeName} from '../actions/index';
+import {TextInput} from '@nokia-csf-uxr/csfWidgets'
 
 export class NameInput extends Component {
     constructor(props) {
@@ -10,22 +11,22 @@ export class NameInput extends Component {
     }
 
     changeHandler(e) {
-        this.props.changeName(e.target.value)
+        this.props.changeName(e.value);
     }
 
     render() {
-        return <span>My name is <input value={this.props.name} onChange={this.changeHandler} type="text" /></span>
+        return <TextInput className="inlineTextInput" label={'My name is'} text={this.props.name} onChange={this.changeHandler}/>;
     }
 }
 
 function mapStateToProps(state) {
     return {
         name: state.name
-    }
+    };
 }
 
 const mapDispatchToProps = {
     changeName
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NameInput)
+export default connect(mapStateToProps, mapDispatchToProps)(NameInput);

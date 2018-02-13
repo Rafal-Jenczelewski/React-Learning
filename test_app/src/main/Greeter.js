@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import "../resources/Greeter.css"
+import {TextInput} from '@nokia-csf-uxr/csfWidgets'
+import '@nokia-csf-uxr/csfWidgets/csfWidgets.css'
 
 class Greeter extends Component {
     constructor(props) {
@@ -15,7 +17,7 @@ class Greeter extends Component {
 
     changeHandler(e) {
         this.setState({
-            name: e.target.value
+            name: e.value
         })
     }
 
@@ -36,7 +38,7 @@ class Greeter extends Component {
             <div>
                 <span>Hello, {this.state.name}</span>
                 <span>It is {this.state.time.toLocaleString()}</span>
-                <span>My name is <input value={this.state.name} onChange={this.changeHandler.bind(this)} type="text" /></span>
+                <TextInput label={"My name is"} text={this.state.name} onChange={this.changeHandler}/>
             </div>
         )
     }

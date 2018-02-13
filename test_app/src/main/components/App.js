@@ -3,6 +3,7 @@ import logo from '../../resources/logo.svg';
 import '../../resources/App.css';
 import Greeter from './Greeter'
 import NameInput from "./NameInput";
+import {BrowserRouter, Route} from 'react-router-dom';
 
 class App extends Component {
     render() {
@@ -13,7 +14,9 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <Greeter/>
-                <NameInput/>
+                <BrowserRouter>
+                    <Route exact path={"/"} component={NameInput}/>
+                </BrowserRouter>
             </div>
         );
     }

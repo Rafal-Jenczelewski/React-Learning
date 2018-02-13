@@ -10,6 +10,7 @@
     "redux-logger": "latest",
     "react-redux": "latest",
     "redux-thunk": "latest",
+    "react-router-dom": "latest",
     "@nokia-csf-uxr/csfWidgets": "latest"
   },
   "devDependencies": {
@@ -23,7 +24,8 @@
     "enzyme-adapter-react-16": "latest",
     "@types/enzyme": "latest",
     "redux-mock-store": "latest",
-    "@types/redux-mock-store": "latest"
+    "@types/redux-mock-store": "latest",
+    "@types/react-router-dom": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,7 +7,7 @@ export const name = (state = "", action) => {
     }
 };
 
-export const notes = (state = ["Check this out", "Learn React"], action) => {
+export const notes = (state = [], action) => {
     switch (action.type) {
         case 'ADD_NOTE':
             return [...state, action.payload];

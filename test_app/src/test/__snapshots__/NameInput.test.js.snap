@@ -1,23 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ConnectedNameInput 1`] = `
-<span>
-  My name is 
-  <input
-    onChange={[Function]}
-    type="text"
-    value="World"
-  />
-</span>
+<div
+  className="csfWidgets"
+>
+  <div
+    className="header-height"
+  >
+    <div
+      className="csfWidgets label"
+      id={null}
+    >
+      <label
+        className="top"
+        htmlFor="MakeUnique"
+        onClick={[Function]}
+      >
+        My name is
+      </label>
+    </div>
+  </div>
+  <div
+    className="has-outline textinput "
+  >
+    <div
+      className="testTextInput"
+    >
+      <input
+        aria-label="textinput"
+        aria-multiline={false}
+        aria-readonly={false}
+        className="text"
+        disabled={false}
+        id="MakeUnique"
+        name=""
+        onBlur={[Function]}
+        onChange={[Function]}
+        onCut={[Function]}
+        onFocus={[Function]}
+        onKeyUp={[Function]}
+        placeholder=""
+        readOnly={false}
+        required={false}
+        spellCheck={true}
+        style={null}
+        tabIndex={0}
+        type="text"
+        value="World"
+      />
+    </div>
+    <div
+      className="footer-height"
+    />
+  </div>
+</div>
 `;
 
 exports[`Name Input snapshot 1`] = `
-<span>
-  My name is 
-  <input
-    onChange={[Function]}
-    type="text"
-    value={undefined}
-  />
-</span>
+<div
+  className="csfWidgets"
+>
+  <div
+    className="header-height"
+  >
+    <div
+      className="csfWidgets label"
+      id={null}
+    >
+      <label
+        className="top"
+        htmlFor="MakeUnique"
+        onClick={[Function]}
+      >
+        My name is
+      </label>
+    </div>
+  </div>
+  <div
+    className="has-outline textinput "
+  >
+    <div
+      className="testTextInput"
+    >
+      <input
+        aria-label="textinput"
+        aria-multiline={false}
+        aria-readonly={false}
+        className="text"
+        disabled={false}
+        id="MakeUnique"
+        name=""
+        onBlur={[Function]}
+        onChange={[Function]}
+        onCut={[Function]}
+        onFocus={[Function]}
+        onKeyUp={[Function]}
+        placeholder=""
+        readOnly={false}
+        required={false}
+        spellCheck={true}
+        style={null}
+        tabIndex={0}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="footer-height"
+    />
+  </div>
+</div>
 `;

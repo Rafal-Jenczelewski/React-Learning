@@ -3,10 +3,7 @@ import ConnectedNameInput, {NameInput} from '../main/components/NameInput';
 import {mount, shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({adapter: new Adapter()});
 
 describe('Dumb NameInput', () => {
     let wrapper;

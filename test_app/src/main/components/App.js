@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import logo from '../../resources/logo.svg';
 import '../../resources/App.css';
 import Greeter from './Greeter';
-import NameInput from './NameInput';
-import {BrowserRouter, Link, Route} from 'react-router-dom';
-import Notes from './Notes';
+import Switch from './Switch';
+
 
 class App extends Component {
     render() {
@@ -15,16 +14,7 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <Greeter/>
-                <BrowserRouter>
-                    <div>
-                        <Route exact path={'/'} component={NameInput}/>
-                        <Route exact path={'/notes'} component={Notes}/>
-                        <div >
-                            <Link style={{display: "block"}} to={"/"}>Home</Link>
-                            <Link style={{display: "block"}} to={"/notes"}>Notes</Link>
-                        </div>
-                    </div>
-                </BrowserRouter>
+                <Switch/>
             </div>
         );
     }

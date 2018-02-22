@@ -51,6 +51,10 @@
   version "9.4.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.5.tgz#d2a90c634208173d1b1a0a6ba9f1df3de62edcf5"
 
+"@types/prop-types@latest":
+  version "15.5.2"
+  resolved "https://repo.lab.pl.alcatel-lucent.com/api/npm/npm-remote/@types/prop-types/-/prop-types-15.5.2.tgz#3c6b8dceb2906cc87fe4358e809f9d20c8d59be1"
+
 "@types/react-dom@16.1.1":
   version "16.0.2"
   resolved "https://repo.lab.pl.alcatel-lucent.com/api/npm/npm-remote/@types/react-dom/-/react-dom-16.0.2.tgz#2da9de21fd83f0140b64794ad9c47930230aedae"
@@ -76,8 +80,8 @@
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.36.tgz#ceb5639013bdb92a94147883052e69bb2c22c69b"
 
 "@types/react@16.1.1":
-  version "16.0.6"
-  resolved "https://repo.lab.pl.alcatel-lucent.com/api/npm/npm-remote/@types/react/-/react-16.0.6.tgz#4572f112861e05d1bd235e47d94a75e12486e332"
+  version "16.0.37"
+  resolved "https://repo.lab.pl.alcatel-lucent.com/api/npm/npm-remote/@types/react/-/react-16.0.37.tgz#1f62a33034d558ecc7955b3d5bc5270aefa33e11"
 
 abab@^1.0.3:
   version "1.0.4"

@@ -2,8 +2,17 @@ import React, {Component} from 'react'
 import "../resources/Greeter.css"
 import {TextInput} from '@nokia-csf-uxr/csfWidgets'
 import '@nokia-csf-uxr/csfWidgets/csfWidgets.css'
+import PropTypes from 'prop-types'
 
 class Greeter extends Component {
+    static propTypes = {
+        name: PropTypes.string.isRequired
+    };
+
+    static defaultProps = {
+        name: "World"
+    };
+
     constructor(props) {
         super(props);
 
